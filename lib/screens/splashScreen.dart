@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:clon_instagram/screens/homeScreen.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget{
@@ -26,7 +27,7 @@ class SplashScreenState extends State<SplashScreen>{
   void showLogin(){
     if (mounted){
       //Navigator.of(context).pushReplacement(HomeScreen.route());
-      //Navigator.pushReplacement(context, HomeScreen.route());
+      Navigator.pushReplacement(context, HomeScreen.route());
     }
   }
 
