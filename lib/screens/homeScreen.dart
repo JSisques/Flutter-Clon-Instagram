@@ -1,4 +1,3 @@
-import 'package:clon_instagram/widgets/customAppBar.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget{
@@ -22,12 +21,15 @@ class HomeScreen extends StatelessWidget{
 
 Widget CustomAppBar() {
     return AppBar(
+      backgroundColor: Colors.white,
       centerTitle: true,
         leading: IconButton(
           icon: Icon(Icons.camera_alt_outlined,),
           onPressed: null,
         ),
-        title: Text("Instagram"),
+        title: Text("Instagram", style: TextStyle(
+          color: Colors.black,
+        ),),
         actions: [
           IconButton(
             icon: Icon(Icons.tv),
